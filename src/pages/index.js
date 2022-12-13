@@ -2,6 +2,7 @@ import * as React from 'react'
 import {Link} from "gatsby"
 import Layout from '../components/layouts'
 import {StaticImage} from 'gatsby-plugin-image'
+import Seo from '../components/seo'
 const IndexPage = ()=>
 {
     return (
@@ -14,11 +15,5 @@ const IndexPage = ()=>
         </Layout>
     )
 }
-export const Head = ()=>(
-    <>
-    <title>主页</title>
-    <meta name='description' content='Your description'></meta>
-    </>
-
-)
+export const Head = ()=><Seo title="Home Page"/>
 export default IndexPage
